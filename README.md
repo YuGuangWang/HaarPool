@@ -1,5 +1,5 @@
 # Haar Graph Pooling
-This repository is the official implementation of [Haar Graph Pooling (Wang et al., ICML, 2020)](https://arxiv.org/abs/1909.11580) . 
+This repository is the official implementation of [Haar Graph Pooling (Wang et al., ICML 2020)](https://arxiv.org/abs/1909.11580) . 
 
 ![HaarPooling idea](HaarPool_idea.png)
 
