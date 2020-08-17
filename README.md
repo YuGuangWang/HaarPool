@@ -33,7 +33,7 @@ If you use our codes and datasets, please cite:
 ```
 @article{wang2020haar,
   title={Haar Graph Pooling},
-  author={Wang, Yu Guang and Li, Ming and Ma, Zheng and Guido Mont\'{u}far and Zhuang, Xiaosheng and Fan, Yanan},
+  author={Wang, Yu Guang and Li, Ming and Ma, Zheng and Mont\'{u}far, Guido and Zhuang, Xiaosheng and Fan, Yanan},
   journal={ICML},
   year={2020}
 }
