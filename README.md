@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ## Training and Evaluation
 
-To train and test the model(s) in the paper, run the following command. We provide the codes for HaarPool on five graph classification benchmarks in Table 1. The dataset will be automatically downloaded and preprocessed before training. All the experiments were performed using [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric) and run on a server with Intel(R) Core(TM) i9-9820X CPU 3.30GHz, NVIDIA GeForce RTX 2080 Ti.
+To train and test the model(s) in the paper, run the following command. We provide the codes for HaarPool on five graph classification benchmarks in Table 1. The dataset will be automatically downloaded and preprocessed before training. All the experiments were performed using [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric) and run on a Google Cloud VM with 4 vCPUs with 16GB mem (Intel Skylake 4.5GHz), and NVIDIA Tesla P4 GPU.
 
 HaarPool on Graph classification benchmark datasets; $dataname to be replaced by MUTAG, PROTEINS, NCI1, NCI109, Mutagenicity
 ```
