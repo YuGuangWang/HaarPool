@@ -14,9 +14,9 @@ pip install -r requirements.txt
 
 ## Training and Evaluation
 
-To train and test the model(s) in the paper, run the following command. We provide the codes for PAN on three benchmarks in Table 1 and the new dataset PointPattern. The dataset will be downloaded and preprocessed before training. All the experiments were performed using [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric) and run on a server with Intel(R) Core(TM) i9-9820X CPU 3.30GHz, NVIDIA GeForce RTX 2080 Ti and NVIDIA TITAN V GV100.
+To train and test the model(s) in the paper, run the following command. We provide the codes for HaarPool on five graph classification benchmarks in Table 1. The dataset will be automatically downloaded and preprocessed before training. All the experiments were performed using [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric) and run on a server with Intel(R) Core(TM) i9-9820X CPU 3.30GHz, NVIDIA GeForce RTX 2080 Ti.
 
-PAN on Graph classification benchmark datasets; dataname to be replaced by PROTEINS, PROTEINS_full, NCI1, AIDS, Mutagenicity
+HaarPool on Graph classification benchmark datasets; dataname to be replaced by PROTEINS, PROTEINS_full, NCI1, AIDS, Mutagenicity
 ```
 python pan_benchmark.py --dataname --L 3 --runs 10
 ```
@@ -31,6 +31,17 @@ Other hyperparameters: --batch_size, --learning_rate, --weight_decay, --pool_rat
 Our model PAN achieves the following performance on graph classification benchmark datasets MUTAG, PROTEINSF and NCI1, and our new graph classification dataset PointPattern (with phi=0.35). The table below shows the mean test accuracy with SD for 10 repetitions. Compared to existing methods such as GCNConv+TopKPool, SAGEConv+SAGPool, GATConv+EdgePool, with the same network architecture, the PAN achieves top test accuracy on most of these datasets. The results are obtained using the above .py programs. The test results on other benchmarks and comparison with the results of other methods can be seen in the paper.
 
 ![PAN results](pan_results.png)
+
+## Citation 
+If you use our codes and datasets, please cite:
+```
+@article{wang2020haar,
+  title={Haar Graph Pooling},
+  author={Sloan, Ian H. and Le Gia, Quoc T. and and Wang, Yu Guang and Womersley, Robert S. and Hamann, Jan},
+  journal={arXiv preprint arXiv:},
+  year={2019}
+}
+```
 
 ## Contributing
 Copyright (c) <2020> <NeurIPS>
