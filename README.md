@@ -30,7 +30,7 @@ Other hyperparameters: --batch_size, --learning_rate, --weight_decay, --pool_rat
 
 Our model PAN achieves the following performance on graph classification benchmark datasets MUTAG, PROTEINSF and NCI1, and our new graph classification dataset PointPattern (with phi=0.35). The table below shows the mean test accuracy with SD for 10 repetitions. Compared to existing methods such as GCNConv+TopKPool, SAGEConv+SAGPool, GATConv+EdgePool, with the same network architecture, the PAN achieves top test accuracy on most of these datasets. The results are obtained using the above .py programs. The test results on other benchmarks and comparison with the results of other methods can be seen in the paper.
 
-![PAN results](pan_results.png)
+![PAN results](Tab2.png)
 
 ## Citation 
 If you use our codes and datasets, please cite:
