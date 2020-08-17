@@ -24,7 +24,7 @@ Hyperparameters in the programs: batch_size, learning_rate, weight_decay, nhid, 
 
 ## Results
 
-Our model HaarPool achieves the following performance on graph classification benchmark datasets MUTAG, PROTEINS, NCI1, NCI109, Mutagenicity. The table below shows the mean test accuracy with SD for 10 repetitions. Compared to existing methods such as CSM, GIN, SortPool, DiffPool, gPool, SAGPool, EigenPool with the same network architecture, the HaarPool achieves top test accuracy on four of five datasets, and in some cases, improve state of the art by a few percentage points. In the experiment, we use a GNN with at most $3$ GCN convolutional layers plus one HaarPooling layer, followed by three fully connected layers. Other results are the best public records:
+Our model HaarPool achieves the following performance on graph classification benchmark datasets MUTAG, PROTEINS, NCI1, NCI109, Mutagenicity. The table below shows the mean test accuracy with SD for 10 repetitions. Compared to existing methods such as CSM, GIN, SortPool, DiffPool, gPool, SAGPool, EigenPool, the HaarPool achieves top test accuracy on four of five datasets, and in some cases, improve state of the art by a few percentage points. In the experiment, we use a GNN with at most $3$ GCN convolutional layers plus one HaarPooling layer, followed by three fully connected layers. Other results are the best public records:
 - [CSM (Kriege & Mutzel, 2012)](https://arxiv.org/abs/1206.6483) 
 - [DiffPool (Ying et al., 2018)](https://arxiv.org/abs/1806.08804) 
 - [EigenPool (Ma et al., 2019a)](https://arxiv.org/abs/1904.13107) 
