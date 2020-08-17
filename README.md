@@ -24,7 +24,16 @@ Other hyperparameters: --batch_size, --learning_rate, --weight_decay, --pool_rat
 
 ## Results
 
-Our model HaarPool achieves the following performance on graph classification benchmark datasets MUTAG, PROTEINS, NCI1, NCI109, Mutagenicity. The table below shows the mean test accuracy with SD for 10 repetitions. Compared to existing methods such as CSM, GIN, SortPool, DiffPool, gPool, SAGPool, EigenPool with the same network architecture, the HaarPool achieves top test accuracy on four of five datasets, and in some cases, improve state of the art by a few percentage points. The results are obtained using the above .py programs. Experiments for HaarPool on Triangles Classification and Quantum Chemistry Regression tasks can be seen in the paper.
+Our model HaarPool achieves the following performance on graph classification benchmark datasets MUTAG, PROTEINS, NCI1, NCI109, Mutagenicity. The table below shows the mean test accuracy with SD for 10 repetitions. Compared to existing methods such as CSM, GIN, SortPool, DiffPool, gPool, SAGPool, EigenPool with the same network architecture, the HaarPool achieves top test accuracy on four of five datasets, and in some cases, improve state of the art by a few percentage points. In the experiment, we use a GNN with at most $3$ GCN convolutional layers plus one HaarPooling layer, followed by three fully connected layers. Other results are the best public records:
+- [CSM (Kriege & Mutzel, 2012)](https://arxiv.org/abs/1206.6483) 
+- [DiffPool (Ying et al., 2018)](https://arxiv.org/abs/1806.08804) 
+- [EigenPool (Ma et al., 2019a)](https://arxiv.org/abs/1904.13107) 
+- [GIN (Xu et al., 2019)](https://openreview.net/forum?id=ryGs6iA5Km)
+- [gPool (Gao & Ji, 2019)](https://arxiv.org/abs/1905.05178) 
+- [SAGPool (Lee et al., 2019)](https://arxiv.org/abs/1904.08082) 
+- [SortPool (Zhang et al., 2018a)](https://www.cse.wustl.edu/~muhan/papers/AAAI_2018_DGCNN.pdf)
+
+The results are obtained using the above .py programs. Experiments for HaarPool on Triangles Classification and Quantum Chemistry Regression tasks can be seen in the paper.
 
 ![PAN results](Tab2.png)
 
