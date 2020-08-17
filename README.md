@@ -20,7 +20,7 @@ HaarPool on Graph classification benchmark datasets; $dataname to be replaced by
 ```
 python haarpool_$dataname.py
 ```
-Other hyperparameters: --batch_size, --learning_rate, --weight_decay, --pool_ratio, --nhid, --epochs
+Hyperparameters in the programs: batch_size, learning_rate, weight_decay, nhid, epochs, early_stopping
 
 ## Results
 
