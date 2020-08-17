@@ -37,9 +37,9 @@ If you use our codes and datasets, please cite:
 ```
 @article{wang2020haar,
   title={Haar Graph Pooling},
-  author={Sloan, Ian H. and Le Gia, Quoc T. and and Wang, Yu Guang and Womersley, Robert S. and Hamann, Jan},
-  journal={arXiv preprint arXiv:},
-  year={2019}
+  author={Wang, Yu Guang and Li, Ming and Ma, Zheng and Guido Mont\'{u}far and Zhuang, Xiaosheng and Fan, Yanan},
+  journal={ICML},
+  year={2020}
 }
 ```
 
