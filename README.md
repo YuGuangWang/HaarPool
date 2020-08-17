@@ -1,9 +1,7 @@
 # Haar Graph Pooling
-This repository is the official implementation of [Haar Graph Pooling](https://arxiv.org/abs/1909.11580) (Wang et al., ICML, 2020). 
+This repository is the official implementation of [Haar Graph Pooling (Wang et al., ICML, 2020)](https://arxiv.org/abs/1909.11580) . 
 
-![HaarPooling idea](pan_idea.png)
-
-
+![HaarPooling idea](HaarPool_idea.png)
 
 
 ## Requirements
@@ -33,34 +31,6 @@ Other hyperparameters: --batch_size, --learning_rate, --weight_decay, --pool_rat
 Our model PAN achieves the following performance on graph classification benchmark datasets MUTAG, PROTEINSF and NCI1, and our new graph classification dataset PointPattern (with phi=0.35). The table below shows the mean test accuracy with SD for 10 repetitions. Compared to existing methods such as GCNConv+TopKPool, SAGEConv+SAGPool, GATConv+EdgePool, with the same network architecture, the PAN achieves top test accuracy on most of these datasets. The results are obtained using the above .py programs. The test results on other benchmarks and comparison with the results of other methods can be seen in the paper.
 
 ![PAN results](pan_results.png)
-
-## New datasets
-Our new datasets are for 3-classification task of point distribtuion graphs, stemming from statistical mechanics. Use following commands to download the three typical datasets we used in the paper:
-```
-import os
-import zipfile
-import gdown
-phi = 0.3 # change to 0.35 or 0.4 for other two PointPattern datasets
-if phi==0.3:
-    ld_dir = 'hpr_phi03' + '_' + str(num_graph) + '/'
-    url = 'https://drive.google.com/uc?id=1C3ciJsteqsKFVGF8JI8-KnXhe4zY41Ss'
-    output = 'hpr_phi03' + '_' + str(num_graph) + '.zip'
-if phi==0.4:
-    ld_dir = 'hpr_phi04' + '_' + str(num_graph) + '/'
-    url = 'https://drive.google.com/uc?id=1rsTh09FzGxHculBVrYyl5tOHD9mxqc0G'
-    output = 'hpr_phi04' + '_' + str(num_graph) + '.zip'
-if phi==0.35:
-    ld_dir = 'hpr_phi035' + '_' + str(num_graph) + '/'
-    url = 'https://drive.google.com/uc?id=16pI974P8WzanBUPrMHIaGfeSLoksviBk'
-    output = 'hpr_phi035' + '_' + str(num_graph) + '.zip'
-if not os.path.exists(output):
-    gdown.download(url, output, quiet=False)
-with zipfile.ZipFile(output, 'r') as zip_ref:
-    zip_ref.extractall()
-os.remove(output)
-```
-The following shows examples of graphs in PointPattern, phi=0.3; left to right: HS, Poisson, RSA
-![pointpattern](pointpattern.png "examples of graphs in PointPattern, phi=0.3; left to right: HS, Poisson, RSA")
 
 ## Contributing
 Copyright (c) <2020> <NeurIPS>
